@@ -17,6 +17,7 @@ class Death(Room):
 
 class Home(Room):
     def enter(self):
+        print "" 
         print "The objective of this game is to go through a full hard day of school, then be rewarded some halal food in the end"
         print "In every class you will recieve a test with one question, get that question wrong and you will die"
         print "You goal is to make the right decisions, and get all the questions right. Eat Halal at the end"
@@ -27,6 +28,7 @@ class Home(Room):
         print "will you attend school today? (yes or no)"
         decision = raw_input("> ")
         if decision == "yes":
+          print ""
           print "You've brushed your teeth"
           print "Taken a shower"
           print "Put on clothes"
@@ -49,6 +51,7 @@ class ComputerScience(Room):
         if choice == "nah":
           print "You made the right choice"
           print "Now you will recieve you daily computer science test/question"
+          print ""
           print "Function Definition: def fire(food):"
           print 'What is "food" in the function Definition?'
           print "A.) Variable"
@@ -59,6 +62,7 @@ class ComputerScience(Room):
           answer = raw_input("> ")
           if answer == "b":
             print "Correct you get to move onto to the next class!"
+            print ""
             return 'calculus'
           else: 
             return 'death'
@@ -80,8 +84,9 @@ class Calculus(Room):
         if give == "yes":
           return 'death'
         elif give == "no":
-          print "good, you would've died"
-          print "time for your question/test"
+          print "Good, you would've died"
+          print "Time for your question/test"
+          print ""
           print "v(t) = 2x what is the average value between t=2 and t=6?"
           print "A.) 8"
           print "B.) 32"
@@ -91,7 +96,7 @@ class Calculus(Room):
           mult = raw_input("> ")
           if mult == "a":
             print "Correct! You are moving on to the next class"
-            print "" 
+            print ""
             return 'english'
           else: 
             return 'death'
@@ -103,6 +108,7 @@ class English(Room):
     def enter(self):
         print "Welcome to the last class of the day, english"
         print "We saved the best for last"
+        print ""
         print "As Ms. Wynne is giving her important lesson on Higher Level Questions, Noel asks you a life or death question"
         print "What time is it?"
         print "Do you tell him the time?"
@@ -111,6 +117,7 @@ class English(Room):
         if time == "no":
           print "Nice choice, Noel was taken out of the class by Ms Wynne and was never heard of again"
           print "Time for your last and final question/test of the day"
+          print ""
           print 'Ms.Wynne says that "A Higher level Question should not be a yes or no question" is she correct?'
           print "(yes or no)"
           print "" 
@@ -132,16 +139,16 @@ class English(Room):
 class Food(Room):
     def enter(self):
         print "You finally made it to the most fire part of the day"
+        print ""
         print "You ordered a chicken over rice with hot and white sauce, do you buy a drink?"
         print "(yes or no)"
-        print "" 
         drink = raw_input("> ")
         if drink == "yes":
-          print "Good, no drink and that hot suace would've killed you"
+          print "Good, no drink and that hot sauce would've killed you"
           return 'end'
         elif drink == "no":
           print "Hot sauce was too hot"
-          return 'die'
+          return 'death'
         else: 
             print "yes or no bruh?"
             print "Don't type in anything else"
@@ -152,6 +159,7 @@ class End(Room):
         print ""
         print "Finally back home"
         print "Hopefully Tuesday will be less stressful"
+        print ""
         exit(0)
         
 class Map(object):
