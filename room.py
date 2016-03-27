@@ -1,6 +1,6 @@
 class Room(object):
     def enter(self):
-        print "This room is not yet configured."
+        print "Parent Room"
         exit(1)
 
 class Death(Room):   
