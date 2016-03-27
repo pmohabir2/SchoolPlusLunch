@@ -1,5 +1,4 @@
 from sys import exit
-from random import randint
 import room 
 
 class Main(object):
