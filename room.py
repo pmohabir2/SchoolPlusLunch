@@ -20,7 +20,7 @@ class Home(Room):
         print "" 
         print "The objective of this game is to go through a full hard day of school, then be rewarded some halal food in the end"
         print "In every class you will recieve a test with one question, get that question wrong and you will die"
-        print "You goal is to make the right decisions, and get all the questions right. Eat Halal at the end"
+        print "Your goal is to make the right decisions, and get all the questions right. Eat Halal at the end"
         print "Do not make any stupid choices, you will die!"
         print "Lets begin"
         print ""
@@ -75,7 +75,7 @@ class ComputerScience(Room):
 class Calculus(Room):
     def enter(self):
         print "Welcome to Calculus"
-        print "Mr.Hatlee will give a very basic introduction on how to solve a definate integral"
+        print "Mr.Hatlee will give a very basic introduction on how to solve a definite integral"
         print "As Mr.Hatlee is talking, Arthur asks you for yesterday's math homework"
         print "Do you give it to him?"
         print "(yes or no)"
